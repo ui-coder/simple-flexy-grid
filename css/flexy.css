@@ -1,30 +1,37 @@
-
 @import url(custom.css);
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: "Muli", sans-serif;
-  background: #444;
-  color: #eee;
-  
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-size: 1.2rem;
-  margin-bottom: 250px;
+    font-family: "Muli", sans-serif;
+    background: #444;
+    color: #eee;
+
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 1.2rem;
+    margin-bottom: 250px;
 }
 
 a {
-  color: var(--link);
+    color: var(--blue);
 
+}
+
+a:hover {
+    color: var(--teal);
+    text-decoration: none;
 }
 
 body {
-  padding: 0 1em;
+    padding: 0 1em;
 }
-
+.justify-end {
+    display: var(--d-flx);
+    justify-content: flex-end;
+}
 /*
 pre {
 
@@ -73,149 +80,150 @@ th {
 .col-11,
 .col-12,
 .col {
-  text-align: center;
-  border: 1px solid #999;
-  padding: 15px;
-  margin: 5px 0;
-  background: #373;
+    text-align: center;
+    border: 1px solid #999;
+    padding: 15px;
+    margin: 5px 0;
+    background: #373;
 }
 
 body {
-  max-width: 1400px;
-  margin: 0 auto;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 h1,
 h2 {
-  text-align: center;
+    text-align: center;
 }
 
 :root {
-  --row-display: block;
-  --col-basis: 100%;
-  --col-offset-basis: 1;
+    --row-display: block;
+    --col-basis: 100%;
+    --col-offset-basis: 1;
 }
 
 @media screen and (min-width: 922px) {
-  :root {
-    --row-display: flex;
-  }
+    :root {
+        --row-display: flex;
+    }
 }
+
 .col-1 {
-  --col-basis: 8.33%;
+    --col-basis: 8.33%;
 }
 
 .col-2 {
-  --col-basis: 16.66%;
+    --col-basis: 16.66%;
 }
 
 .col-3 {
-  --col-basis: 25%;
+    --col-basis: 25%;
 }
 
 .col-4 {
-  --col-basis: 33.33%;
+    --col-basis: 33.33%;
 }
 
 .col-5 {
-  --col-basis: 41.66%;
+    --col-basis: 41.66%;
 }
 
 .col-6 {
-  --col-basis: 50%;
+    --col-basis: 50%;
 }
 
 .col-7 {
-  --col-basis: 58.33%;
+    --col-basis: 58.33%;
 }
 
 .col-8 {
-  --col-basis: 66.66%;
+    --col-basis: 66.66%;
 }
 
 .col-9 {
-  --col-basis: 75%;
+    --col-basis: 75%;
 }
 
 .col-10 {
-  --col-basis: 83.33%;
+    --col-basis: 83.33%;
 }
 
 .col-11 {
-  --col-basis: 91.66%;
+    --col-basis: 91.66%;
 }
 
 .col-12 {
-  --col-basis: 100%;
+    --col-basis: 100%;
 }
 
 .col-1-push {
-  --col-offset-basis: 8.33%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 8.33%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-2-push {
-  --col-offset-basis: 16.66%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 16.66%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-3-push {
-  --col-offset-basis: 25%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 25%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-4-push {
-  --col-offset-basis: 33.33%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 33.33%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-5-push {
-  --col-offset-basis: 41.66%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 41.66%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-6-push {
-  --col-offset-basis: 50%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 50%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-7-push {
-  --col-offset-basis: 58.33%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 58.33%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-8-push {
-  --col-offset-basis: 66.66%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 66.66%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-9-push {
-  --col-offset-basis: 75%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 75%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-10-push {
-  --col-offset-basis: 83.33%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 83.33%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-11-push {
-  --col-offset-basis: 91.66%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 91.66%;
+    margin-left: var(--col-offset-basis);
 }
 
 .col-12-push {
-  --col-offset-basis: 100%;
-  margin-left: var(--col-offset-basis);
+    --col-offset-basis: 100%;
+    margin-left: var(--col-offset-basis);
 }
 
 /* Logic fold */
 .row {
-  display: var(--row-display);
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    display: var(--row-display);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .col-1,
@@ -230,12 +238,12 @@ h2 {
 .col-10,
 .col-11,
 .col-12 {
-  -webkit-box-flex: 0;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: var(--col-basis);
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: var(--col-basis);
 }
 
 .col {
-  flex-basis: 100%;
+    flex-basis: 100%;
 }
