@@ -33,7 +33,9 @@ body {
     display: var(--d-flx);
     justify-content: flex-end;
 }
-
+.copy a {
+    color: var(--txt-primary);
+}
 /*
 pre {
 
