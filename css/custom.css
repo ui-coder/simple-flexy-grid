@@ -14,7 +14,12 @@
 .plum {
     background: var(--plum);
 }
-
+.dark {
+    background: var(--dark);
+}
+.txt-light {
+    color: #eee;
+}
 .txt-left {
     text-align: left;
 }
