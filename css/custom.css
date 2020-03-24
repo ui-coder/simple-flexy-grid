@@ -1,11 +1,15 @@
 @import url(root/custom-props.css);
-    
+
 /*
     Current Code    
 ---------------------------------*/
+.bdr-gray {
+    border: 1px solid #999;
+}
 .grassy {
     background: var(--grassy);
 }
+
 .plum {
     background: var(--plum);
 }
