@@ -1,1 +1,11 @@
-@import url(root/custom-props.css)
+@import url(root/custom-props.css);
+    
+/*
+    Current Code    
+---------------------------------*/
+.grassy {
+    background: var(--grassy);
+}
+.plum {
+    background: var(--plum);
+}
