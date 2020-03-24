@@ -14,12 +14,15 @@
 .plum {
     background: var(--plum);
 }
+
 .dark {
     background: var(--dark);
 }
+
 .txt-light {
     color: #eee;
 }
+
 .txt-left {
     text-align: left;
 }
@@ -50,4 +53,16 @@
 
 .txt-match {
     text-align: match-parent;
+}
+
+.gap {
+    margin: var(--gap);
+}
+
+.inner {
+    padding: var(--inner);
+}
+
+.outer {
+    margin: var(--outer);
 }
