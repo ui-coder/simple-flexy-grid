@@ -6,10 +6,43 @@
 .bdr-gray {
     border: 1px solid #999;
 }
+
 .grassy {
     background: var(--grassy);
 }
 
 .plum {
     background: var(--plum);
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-justify {
+    text-align: justify;
+}
+
+.txt-start {
+    text-align: start;
+}
+
+.txt-end {
+    text-align: end;
+}
+
+.txt-all {
+    text-align: justify-all;
+}
+
+.txt-match {
+    text-align: match-parent;
 }
