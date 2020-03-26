@@ -364,7 +364,6 @@ a:hover {
 
 .row-wrap {
     flex-wrap: wrap;
-    flex: 1;
 }
 
 .w25 {
@@ -407,4 +406,5 @@ a:hover {
 
 .col {
     flex-basis: 100%;
+    flex: 1;
 }
