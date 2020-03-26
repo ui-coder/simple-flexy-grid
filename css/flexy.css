@@ -364,7 +364,7 @@ a:hover {
 
 .row-wrap {
     flex-wrap: wrap;
-    width: 100%;
+    flex: 1;
 }
 
 .w25 {
