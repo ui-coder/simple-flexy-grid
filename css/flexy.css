@@ -22,15 +22,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .device-width {
     width: var(--device-width);
 }
+
 .page-width {
     width: var(--full-width);
-}
-h1,
-h2 {
-    text-align: center;
 }
 
 a {
@@ -195,6 +193,9 @@ a:hover {
     :root {
         --row-display: flex;
     }
+    .row {
+        flex-flow: var(--row-wrap);
+    }
 }
 
 .col-1 {
@@ -304,14 +305,46 @@ a:hover {
     --col-offset: 100%;
     margin-left: var(--col-offset);
 }
+.col-grow-1 {
+    flex-grow: 1;
+}
+.col-grow-2 {
+    flex-grow: 2;
+}
+.col-grow-3 {
+    flex-grow: 3;
+}
+.col-grow-4 {
+    flex-grow: 4;
+}
+.col-grow-5 {
+    flex-grow: 5;
+}
+.col-grow-6 {
+    flex-grow: 6;
+}
+.col-grow-7 {
+    flex-grow: 7;
+}
+.col-grow-8 {
+    flex-grow: 8;
+}
+.col-grow-9 {
+    flex-grow: 9;
+}
+.col-grow-10 {
+    flex-grow: 10;
+}
+.col-grow-11 {
+    flex-grow: 11;
+}
 
 /* Logic fold */
 .row {
     display: var(--row-display);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: var(--row-nowrap);
 }
 
 .col-1,
