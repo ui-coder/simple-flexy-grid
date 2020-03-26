@@ -1,6 +1,6 @@
 /*==============================================* 
- *  Custom-Props - v1.4.3                       *
- *  (c)2019, by @htmlstrap                      *
+ *  Custom-Props - v1.4.4                       *
+ *  (c)Mar. 26.2020, by @htmlstrap              *
  *==============================================*/
 
 :root {
@@ -288,7 +288,7 @@
     --wrap-rev: wrap-reverse;
     /* flex-flow in row
     --------------------------------------------*/
-    --flex-row: row;
+    --d-row: row;
     --row-wrap: row wrap;
     --row-nowrap: row nowrap;
     --row-wrap-rev: row wrap-reverse;
@@ -297,7 +297,7 @@
     --row-rev-wrap-rev: row-reverse wrap-reverse;
     /* flex-flow in col
     --------------------------------------------*/
-    --flex-col: column;
+    --d-col: column;
     --col-wrap: column wrap;
     --col-nowrap: column nowrap;
     --col-wrap-rev: column wrap-reverse;
