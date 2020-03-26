@@ -163,6 +163,9 @@ a:hover {
 /*
     Order
 ---------------------------------*/
+.order-first {
+    order: 1;
+}
 
 /*
     Flexbox module End
@@ -193,6 +196,7 @@ a:hover {
     :root {
         --row-display: flex;
     }
+
     .row {
         flex-flow: var(--row-wrap);
     }
@@ -305,36 +309,47 @@ a:hover {
     --col-offset: 100%;
     margin-left: var(--col-offset);
 }
+
 .col-grow-1 {
     flex-grow: 1;
 }
+
 .col-grow-2 {
     flex-grow: 2;
 }
+
 .col-grow-3 {
     flex-grow: 3;
 }
+
 .col-grow-4 {
     flex-grow: 4;
 }
+
 .col-grow-5 {
     flex-grow: 5;
 }
+
 .col-grow-6 {
     flex-grow: 6;
 }
+
 .col-grow-7 {
     flex-grow: 7;
 }
+
 .col-grow-8 {
     flex-grow: 8;
 }
+
 .col-grow-9 {
     flex-grow: 9;
 }
+
 .col-grow-10 {
     flex-grow: 10;
 }
+
 .col-grow-11 {
     flex-grow: 11;
 }
@@ -345,6 +360,31 @@ a:hover {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: var(--row-nowrap);
+}
+
+.row-wrap {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.w25 {
+    width: 25% !important;
+}
+
+.w50 {
+    width: 50% !important;
+}
+
+.w75 {
+    width: 75% !important;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+.mw100 {
+    min-width: 100% !important;
 }
 
 .col-1,
