@@ -1,6 +1,7 @@
 @import url(custom.css);
 
 :root {
+    --d-flx: flex;
     --row-display: block;
     --col-basis: 100%;
     --col-offset: 1;
@@ -46,117 +47,110 @@ a:hover {
 ------------------------------------
     justify-content - X (parent)
 ----------------------------------*/
-.justify-start {
+[class*="jistify-"] {
     display: var(--d-flx);
+}
+.justify-start {
     justify-content: flex-start;
 }
 
 .justify-end {
-    display: var(--d-flx);
     justify-content: flex-end;
 }
 
 .justify-center {
-    display: var(--d-flx);
     justify-content: center;
 }
 
 .justify-between {
-    display: var(--d-flx);
     justify-content: space-between;
 }
 
 .justify-around {
-    display: var(--d-flx);
     justify-content: space-around;
 }
 
 .justify-evenly {
-    display: var(--d-flx);
     justify-content: space-evenly;
 }
 
 /*
     align-items - Y (parent)
 ---------------------------------*/
-.items-start {
+[class*="items-"] {
     display: var(--d-flx);
+}
+.items-start {
     align-items: flex-start;
 }
 
 .items-center {
-    display: var(--d-flx);
     align-items: center;
 }
 
 .items-end {
-    display: var(--d-flx);
     align-items: flex-end;
 }
 
 .items-expand {
-    display: var(--d-flx);
     align-items: stretch;
 }
 
 .items-base {
-    display: var(--d-flx);
     align-items: baseline;
 }
 
 /*
     align-content - Y 
 ---------------------------------*/
-.align-start {
+[class*="align-"] {
     display: var(--d-flx);
+    flex-wrap: wrap;
+}
+.align-start {
     align-content: flex-start;
 }
 
 .align-center {
-    display: var(--d-flx);
     align-content: center;
 }
 
 .align-end {
-    display: var(--d-flx);
     align-content: flex-end;
 }
 
 .align-around {
-    display: var(--d-flx);
     align-content: space-around;
 }
 
 .align-between {
-    display: var(--d-flx);
     align-content: space-between;
 }
 
 .align-expand {
-    display: var(--d-flx);
     align-content: stretch;
 }
 
 /*
     align-self - Y (both)
 ---------------------------------*/
-.self-auto {
+[class*="self-"] {
     display: var(--d-flx);
+    flex-wrap: wrap;
+}
+.self-auto {
     align-self: auto;
 }
 
 .self-start {
-    display: var(--d-flx);
     align-self: flex-start;
 }
 
 .self-center {
-    display: var(--d-flx);
     align-self: center;
 }
 
 .self-end {
-    display: var(--d-flx);
     align-self: flex-end;
 }
 
@@ -165,6 +159,10 @@ a:hover {
 ---------------------------------*/
 .order-first {
     order: 1;
+}
+
+.order-last {
+    order: 12;
 }
 
 /*
@@ -197,9 +195,11 @@ a:hover {
         --row-display: flex;
     }
 
+/*
     .row {
         flex-flow: var(--row-wrap);
     }
+*/
 }
 
 .col-1 {
@@ -354,9 +354,33 @@ a:hover {
     flex-grow: 11;
 }
 
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+.flex-shrink-2 {
+    flex-shrink: 2;
+}
+
+.flex-shrink-3 {
+    flex-shrink: 3;
+}
+
+.flex-shrink-4 {
+    flex-shrink: 4;
+}
+
+.flex-shrink-5 {
+    flex-shrink: 5;
+}
+
+.flex-shrink-6 {
+    flex-shrink: 6;
+}
+
 /* Logic fold */
 .row {
-    display: var(--row-display);
+    display: var(--d-flx);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: var(--row-nowrap);
@@ -364,7 +388,6 @@ a:hover {
 
 .row-wrap {
     flex-wrap: wrap;
-    flex: 1;
 }
 
 .w25 {
@@ -407,4 +430,5 @@ a:hover {
 
 .col {
     flex-basis: 100%;
+    flex: 1;
 }
