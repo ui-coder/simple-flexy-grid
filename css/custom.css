@@ -70,10 +70,9 @@
 .box {
     display: var(--d-flx);
     flex-wrap: var(--flx-wrap);
-    height: var(--sizeY, 260px);
+    height: var(--sizeY, 300px);
     background: var(--gray-light);
     box-sizing: border-box;
-
     padding: var(--inner);
 }
 
