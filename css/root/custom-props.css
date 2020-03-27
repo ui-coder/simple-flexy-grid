@@ -239,7 +239,7 @@
     --full-width: 100%;
     --full-height: var(--full-width);
     --wide: calc(- var(--gap)) !important;
-    --size: 20px;
+    --size: initial;
     --sizeX: var(--size);
     --sizeY: var(--size);
     --radius: 10px;
