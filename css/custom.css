@@ -66,3 +66,21 @@
 .outer {
     margin: var(--outer);
 }
+
+.box {
+    display: var(--d-flx);
+    flex-wrap: var(--flx-wrap);
+    height: var(--full, 1000px);
+    background: var(--gray-light);
+    padding: var(--inner);
+}
+
+.html {
+    color: var(--html);
+    text-shadow: -1px -1px 0 var(--light);
+}
+
+.strap {
+    color: var(--strap);
+    text-shadow: -1px -1px 0 var(--light);
+}

@@ -222,7 +222,7 @@
     /* padding */
     --outer: 15px;
     /* margin */
-    --auto: auto;
+    --yep: auto;
     --val: var(--val);
     /* same as : initial; */
     --arg: var(--arg);
@@ -235,7 +235,9 @@
     --alignY: var(--align);
     /* Base Size */
     --device-width: 100vw;
+    --device-height: var(--device-width);
     --full-width: 100%;
+    --full-height: var(--full-width);
     --wide: calc(- var(--gap)) !important;
     --size: 20px;
     --sizeX: var(--size);
@@ -275,16 +277,16 @@
     ============================================*/
     /* flex-direction 
     --------------------------------------------*/
-    --flex-row: row;
+    --flx-row: row;
     /* default */
     --row-rev: row-reverse;
-    --flex-col: column;
+    --flx-col: column;
     --col-rev: column-reverse;
     /* flex-wrap 
     --------------------------------------------*/
     --nowrap: nowrap;
     /* default */
-    --flex-wrap: wrap;
+    --flx-wrap: wrap;
     --wrap-rev: wrap-reverse;
     /* flex-flow in row
     --------------------------------------------*/
@@ -309,7 +311,7 @@
     --left: var(--start);
     /* default */
     --right: var(--end);
-    --centr: center;
+    --center: center;
     --between: space-between;
     --around: space-around;
     --evenly: space-evenly;
@@ -327,7 +329,7 @@
     /* default */
     --start: flex-start;
     --end: flex-end;
-    --centr: center;
+    --center: center;
     --between: space-between;
     --around: space-around;
     /*
@@ -355,7 +357,7 @@
     --expand: stretch;
     --start: flex-start;
     --end: flex-end;
-    --centr: center;
+    --center: center;
     --base: baseline;
     /*
         More Variables

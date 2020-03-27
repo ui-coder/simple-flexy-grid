@@ -12,7 +12,7 @@
 }
 
 html {
-    font-family: "Muli", sans-serif;
+    font-family: var(--sans-serif);
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-size: 1.2rem;
@@ -51,27 +51,27 @@ a:hover {
     display: var(--d-flx);
 }
 .justify-start {
-    justify-content: flex-start;
+    justify-content: var(--start);
 }
 
 .justify-end {
-    justify-content: flex-end;
+    justify-content: var(--end);
 }
 
 .justify-center {
-    justify-content: center;
+    justify-content: var(--center);
 }
 
 .justify-between {
-    justify-content: space-between;
+    justify-content: var(--between);
 }
 
 .justify-around {
-    justify-content: space-around;
+    justify-content: var(--around);
 }
 
 .justify-evenly {
-    justify-content: space-evenly;
+    justify-content: var(--evenly);
 }
 
 /*
@@ -81,23 +81,23 @@ a:hover {
     display: var(--d-flx);
 }
 .items-start {
-    align-items: flex-start;
+    align-items: var(--start);
 }
 
 .items-center {
-    align-items: center;
+    align-items: var(--center);
 }
 
 .items-end {
-    align-items: flex-end;
+    align-items: var(--end);
 }
 
 .items-expand {
-    align-items: stretch;
+    align-items: var(--expand);
 }
 
 .items-base {
-    align-items: baseline;
+    align-items: var(--base);
 }
 
 /*
@@ -108,27 +108,27 @@ a:hover {
     flex-wrap: wrap;
 }
 .align-start {
-    align-content: flex-start;
+    align-content: var(--start);
 }
 
 .align-center {
-    align-content: center;
+    align-content: var(--center);
 }
 
 .align-end {
-    align-content: flex-end;
+    align-content: var(--end);
 }
 
 .align-around {
-    align-content: space-around;
+    align-content: var(--around);
 }
 
 .align-between {
-    align-content: space-between;
+    align-content: var(--between);
 }
 
 .align-expand {
-    align-content: stretch;
+    align-content: var(--expand);
 }
 
 /*
@@ -139,19 +139,19 @@ a:hover {
     flex-wrap: wrap;
 }
 .self-auto {
-    align-self: auto;
+    align-self: var(--yep);
 }
 
 .self-start {
-    align-self: flex-start;
+    align-self: var(--start);
 }
 
 .self-center {
-    align-self: center;
+    align-self: var(--center);
 }
 
 .self-end {
-    align-self: flex-end;
+    align-self: var(--end);
 }
 
 /*
@@ -195,11 +195,9 @@ a:hover {
         --row-display: flex;
     }
 
-/*
     .row {
         flex-flow: var(--row-wrap);
     }
-*/
 }
 
 .col-1 {
@@ -380,7 +378,7 @@ a:hover {
 
 /* Logic fold */
 .row {
-    display: var(--d-flx);
+    display: var(--row-display);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: var(--row-nowrap);
