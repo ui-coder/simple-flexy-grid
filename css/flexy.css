@@ -204,6 +204,12 @@ a:hover {
     }
 }
 
+@media (max-width: 922px) {
+    .box {
+        height: var(--sizeY, 100%);
+    }
+}
+
 .col-1 {
     --col-basis: 8.33%;
 }
