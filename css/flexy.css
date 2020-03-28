@@ -50,6 +50,7 @@ a:hover {
 [class*="jistify-"] {
     display: var(--d-flx);
 }
+
 .justify-start {
     justify-content: var(--start);
 }
@@ -80,6 +81,7 @@ a:hover {
 [class*="items-"] {
     display: var(--d-flx);
 }
+
 .items-start {
     align-items: var(--start);
 }
@@ -107,6 +109,7 @@ a:hover {
     display: var(--d-flx);
     flex-wrap: wrap;
 }
+
 .align-start {
     align-content: var(--start);
 }
@@ -138,6 +141,7 @@ a:hover {
     display: var(--d-flx);
     flex-wrap: wrap;
 }
+
 .self-auto {
     align-self: var(--yep);
 }

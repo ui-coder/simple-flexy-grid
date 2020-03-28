@@ -70,10 +70,12 @@
 .box {
     display: var(--d-flx);
     flex-wrap: var(--flx-wrap);
-    height: var(--sizeY, 300px);
+    height: calc(var(--sizeY, 300px) + 1%);
     background: var(--gray-light);
+/*
     box-sizing: border-box;
     padding: var(--inner);
+*/
 }
 
 .html {
