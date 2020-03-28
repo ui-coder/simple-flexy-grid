@@ -67,7 +67,7 @@
     margin: var(--outer);
 }
 
-.box {
+.wrap {
     display: var(--d-flx);
     flex-wrap: var(--flx-wrap);
     height: var(--sizeY, 300px);

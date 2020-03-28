@@ -205,7 +205,7 @@ a:hover {
 }
 
 @media (max-width: 922px) {
-    .box {
+    .wrap {
         height: var(--sizeY, 100%);
     }
 }
@@ -394,10 +394,6 @@ a:hover {
     flex-flow: var(--row-nowrap);
 }
 
-.row-wrap {
-    flex-wrap: wrap;
-}
-
 .w25 {
     width: 25% !important;
 }
@@ -437,6 +433,6 @@ a:hover {
 }
 
 .col {
-    flex-basis: 100%;
+    flex-basis: var(--col-basis);
     flex: 1;
 }
