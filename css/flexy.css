@@ -1,5 +1,4 @@
 @import url(custom.css);
-
 :root {
     --d-flx: flex;
     --row-display: block;
@@ -34,7 +33,6 @@ body {
 
 a {
     color: var(--blue);
-
 }
 
 a:hover {
@@ -42,11 +40,13 @@ a:hover {
     text-decoration: none;
 }
 
+
 /*==================================
     Flexbox module Start
 ------------------------------------
     justify-content - X (parent)
 ----------------------------------*/
+
 [class*="jistify-"],
 [class*="items-"],
 [class*="align-"],
@@ -79,6 +79,7 @@ a:hover {
     justify-content: var(--evenly);
 }
 
+
 /*
     align-items - Y (parent)
 ---------------------------------*/
@@ -102,6 +103,7 @@ a:hover {
 .items-base {
     align-items: var(--base);
 }
+
 
 /*
     align-content - Y 
@@ -131,6 +133,7 @@ a:hover {
     align-content: var(--expand);
 }
 
+
 /*
     align-self - Y (both)
 ---------------------------------*/
@@ -151,51 +154,72 @@ a:hover {
     align-self: var(--end);
 }
 
+
 /*
     Order
 ---------------------------------*/
+
 .order-1 {
     order: 1;
 }
+
 .order-2 {
     order: 2;
 }
+
 .order-3 {
     order: 3;
 }
+
 .order-4 {
     order: 4;
 }
+
 .order-5 {
     order: 5;
 }
+
 .order-6 {
     order: 6;
 }
+
 .order-7 {
     order: 7;
 }
+
 .order-8 {
     order: 8;
 }
+
 .order-9 {
     order: 9;
 }
+
 .order-10 {
     order: 10;
 }
+
 .order-11 {
     order: 11;
 }
+
 .order-12 {
     order: 12;
 }
 
+
 /*
     Flexbox module End
 =================================*/
+
 .copy a {
     color: var(--txt-primary);
+}
+
+.container {
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .col-1,
@@ -215,12 +239,37 @@ a:hover {
     margin: 5px 0;
 }
 
+@media (min-width: 767px) {
+    :root {
+        --sm-device: none;
+    }
+    .container {
+        max-width: var(--sm-device);
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --md-device: 950px;
+    }
+    .container {
+        max-width: var(--md-device);
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --lg-device: 970px;
+    }
+    .container {
+        max-width: var(--lg-device);
+    }
+}
 
 @media screen and (min-width: 922px) {
     :root {
         --row-display: flex;
     }
-
     .row {
         flex-flow: var(--row-wrap);
     }
@@ -408,7 +457,9 @@ a:hover {
     flex-shrink: 6;
 }
 
+
 /* Logic fold */
+
 .row {
     display: var(--row-display);
     -webkit-box-orient: horizontal;
